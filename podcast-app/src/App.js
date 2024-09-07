@@ -1,24 +1,19 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="App flex flex-col items-center justify-center min-h-screen bg-yellow p-4">
+      <h1 className="text-4xl font-bold text-blue-600">Welcome to Podcast App!</h1>
+      <div className="animn1">
+      <div className="anim-img"></div>
+      <div className="anim-text">Discover new episodes, share your favorite shows, and stay up-to-date on your favorite podcasts.</div>
+      </div>
     </div>
+
+    
   );
 }
 

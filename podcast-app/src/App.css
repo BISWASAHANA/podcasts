@@ -1,4 +1,5 @@
 .App {
+  @apply min-h-screen flex items-center justify-center bg-emerald-400; 
   text-align: center;
 }
 
@@ -35,4 +36,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim1{
+  text-align: center;
+  max-width: 600px;
+}
+
+.anim-text{
+  /* Animation properties */
+  animation: fadeInUp 1s ease-out;
+  /* Additional styling */
+  font-size: 1.25rem; /* Adjust size as needed */
+  color: #4a4a4a; /* Adjust color as needed */
+  padding: 1rem; /* Adjust padding as needed */
 }
